@@ -5,7 +5,7 @@
 - 📫 How to reach me techsakshirautela@gmail.com.
 - 🎓 Dev Bhoomi Uttrakhand University.
 - 🎓 Jawahar Navodaya Vidhyalaya Rudraprayag.
-- 📍 Dehradun,Uttrakhand.
+- 📍 Rudraprayag,Uttrakhand.
 <!---
 sakshirautela/sakshirautela is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
