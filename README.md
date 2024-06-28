@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @sakshirautela.
-- 👀 I’m interested in learning.
+- 👀 I’m interested in learning tech.
 - 🌱 I have learnt Java, C, C++, Python, HTML, CSS, OOPs Concepts.
 - 💞️ I’m looking to collaborate on good ideas.
 - 📫 How to reach me techsakshirautela@gmail.com.
