@@ -3,8 +3,9 @@
 - 🌱 I have learnt Java, C, Python,OOPs Concepts.
 - 🤝 I’m looking to collaborate on good ideas.
 - 📫 How to reach me techsakshirautela@gmail.com.
-- 🎓 Dev Bhoomi Uttrakhand University.
-- 🎓 Jawahar Navodaya Vidhyalaya Rudraprayag.
+- 🎓 Amity University (MCA).
+- 🎓 Dev Bhoomi Uttrakhand University (BCA).
+- 🎓 Jawahar Navodaya Vidhyalaya Rudraprayag (PCM+CS).
 - 🏡 Rudraprayag,Uttrakhand.
 <!---
 sakshirautela/sakshirautela is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
