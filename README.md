@@ -3,9 +3,9 @@
 **AI/ML Enthusiast | Full-Stack Developer | Problem Solver**  
 📍 Rudraprayag, Uttarakhand | ✉️ techsakshirautela@gmail.com  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](Your_LinkedIn_URL)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](Your_LeetCode_URL)
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](Your_GfG_URL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sakshi-rautela-b1823a349/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/sakshirautela/)
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/sakshirautela/)
 
 ---
 
@@ -32,26 +32,16 @@
 ![OOP](https://img.shields.io/badge/OOP-FFA500?style=for-the-badge&logo=java&logoColor=white)
 
 ---
-
-## 🔥 Featured Projects
-
-| Project | Description | Tech Used |
-|---------|-------------|-----------|
-| [MNIST Digit Recognizer](URL) | Handwritten digit classification model | Python, TensorFlow, Keras |
-| [Face Detection System](URL) | Real-time face detection from webcam | Python, OpenCV |
-| [Activity Recognition](URL) | Classifies physical activities from sensor data | Python, scikit-learn |
-| [Invoice Generator](URL) | React-based billing system | React, JavaScript |
-
----
-
 ## 📚 Education
 
 - **MCA (AI/ML Specialization)**  
   Amity University • 2024-2026  
 
 - **BCA (9.03 CGPA)**  
-  Dev Bhoomi Uttarakhand University • 2021-2024  
-
+  Dev Bhoomi Uttarakhand University • 2021-2024
+  
+- **High School (94.4%)**  
+  Jwahar Navodaya Vidyalaya Rudraprayag • 2014-2021
 ---
 
 ## 🏆 Certifications
@@ -69,7 +59,3 @@
 - Competitive Programming in C++  
 
 ---
-
-![Sakshi's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical)](https://github.com/yourusername)
