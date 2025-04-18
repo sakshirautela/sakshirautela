@@ -1,16 +1,13 @@
-# 🌟 Welcome to Sakshi's GitHub Profile! 🌟
-
-![Header](https://raw.githubusercontent.com/sakshirautela/sakshirautela/main/banner.png)
-
-Hi there! I'm Sakshi, a passionate developer who loves building creative and impactful projects. Let's explore together! 🚀
+# 🌟 Welcome to my GitHub Profile! 🌟
+# Hi  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> there! I'm Sakshi, a passionate developer who loves building creative and impactful projects. Let's explore together! 🚀
 
 ---
 
 ## 🖌️ About Me
 
-- 🌱 **Currently Learning**: Advanced JavaScript, React, and Node.js.
+- 🌱 **Currently Learning**: Advanced JavaScript, React, Java ,Python ,C/C++ and Artificial Intelligence.
 - 🎯 **Goals**: Building scalable applications and contributing to open-source projects.
-- 💬 **Ask Me About**: Web development, GitHub workflows, or anything tech-related!
+- 💬 **Ask Me About**: Web development, Artificial Intelligence , Machine Learning , GitHub workflows, or anything tech-related!
 - ⚡ **Fun Fact**: I’m a night owl 🦉 who codes best at midnight!
 
 ---
@@ -44,37 +41,16 @@ Hi there! I'm Sakshi, a passionate developer who loves building creative and imp
 
 ![Sakshi's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=sakshirautela&theme=github)
 
----
-
-## 🚀 Featured Projects
-
-Here are some of my coolest works:
-
-- [**GitHub Readme Stats**](https://github.com/anuraghazra/github-readme-stats)  
-  📊 Dynamically generated stats for your GitHub profile.
-  
-- [**Portfolio Website**](https://yourportfolio.com)  
-  🌐 A showcase of my work, skills, and achievements.
-
----
 
 ## 📫 Connect with Me
 
 <p align="center">
-  <a href="https://linkedin.com/in/sakshirautela"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/sakshi-rautela-b1823a349/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white"/></a>
   <a href="https://twitter.com/SakshiRautela"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white"/></a>
-  <a href="mailto:sakshi@example.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white"/></a>
+  <a href="mailto:techsakshirautela@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white"/></a>
 </p>
 
 ---
 
-## 🎉 Fun Add-ons!
-
-- **Waving Hand Emoji**:  
-  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Hi, I’m Sakshi!
-
-- **Custom Banner**: Create a stunning banner using tools like [Canva](https://www.canva.com/) or [Figma](https://www.figma.com/) and upload it to your profile repository.
-
----
 
 Feel free to explore my repositories, connect with me, and leave a ⭐ if you like something!
