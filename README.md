@@ -1,6 +1,6 @@
 # 🌟 Welcome to Sakshi's GitHub Profile! 🌟
 
-![Header](https://user-images.githubusercontent.com/your-username/your-banner-image.png)
+![Header](https://raw.githubusercontent.com/sakshirautela/sakshirautela/main/banner.png)
 
 Hi there! I'm Sakshi, a passionate developer who loves building creative and impactful projects. Let's explore together! 🚀
 
@@ -19,7 +19,7 @@ Hi there! I'm Sakshi, a passionate developer who loves building creative and imp
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=sakshirautela&show_icons=true&theme=radical" alt="Sakshi's GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sakshirautela&theme=radical" alt="Sakshi's Streak Stats" width="48%" />
+  <img src="https://streak-stats.demolab.com/?user=sakshirautela&theme=dark&hide_border=true" alt="Sakshi's Streak Stats" width="48%" />
 </p>
 
 ---
@@ -27,7 +27,7 @@ Hi there! I'm Sakshi, a passionate developer who loves building creative and imp
 ## 🏆 Achievements
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sakshirautela&theme=radical&no-frame=true&row=1&column=7" alt="Trophy" />
+  <img src="https://github-profile-trophy.vercel.app/?username=sakshirautela&theme=juicyfresh&no-frame=true&row=1&column=7" alt="Trophy" />
 </p>
 
 ---
@@ -37,6 +37,12 @@ Hi there! I'm Sakshi, a passionate developer who loves building creative and imp
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshirautela&layout=compact&theme=radical" alt="Top Languages" />
 </p>
+
+---
+
+## 🌐 Contribution Graph
+
+![Sakshi's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=sakshirautela&theme=github)
 
 ---
 
@@ -55,15 +61,20 @@ Here are some of my coolest works:
 ## 📫 Connect with Me
 
 <p align="center">
-  <a href=["https://www.linkedin.com/in/sakshi-rautela-b1823a349"]/a><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://twitter.com/SakshiRautela"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
-  <a href="mailto:sakshi@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://linkedin.com/in/sakshirautela"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white"/></a>
+  <a href="https://twitter.com/SakshiRautela"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white"/></a>
+  <a href="mailto:sakshi@example.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white"/></a>
 </p>
 
 ---
 
 ## 🎉 Fun Add-ons!
 
-- **Custom Background Animation**: Add a waving hand emoji using an animated SVG:
-  ```html
-  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
+- **Waving Hand Emoji**:  
+  <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> Hi, I’m Sakshi!
+
+- **Custom Banner**: Create a stunning banner using tools like [Canva](https://www.canva.com/) or [Figma](https://www.figma.com/) and upload it to your profile repository.
+
+---
+
+Feel free to explore my repositories, connect with me, and leave a ⭐ if you like something!
