@@ -65,10 +65,6 @@
 
 
 ---
-[![trophy](https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
-
----
-## 🎥 Demo
-![App Demo](https://media.giphy.com/media/your-demo-link.gif)
+[![trophy](https://github-profile-trophy.vercel.app/?username=sakshirautela)](https://github.com/sakshirautela/github-profile-trophy)
 
 ---
