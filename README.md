@@ -32,6 +32,9 @@
 ![OOP](https://img.shields.io/badge/OOP-FFA500?style=for-the-badge&logo=java&logoColor=white)
 
 ---
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sakshirautela&layout=compact)
+
+---
 ## 📚 Education
 
 - **MCA (AI/ML Specialization)**  
