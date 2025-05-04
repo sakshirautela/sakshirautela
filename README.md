@@ -8,9 +8,6 @@
 [![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/sakshirautela/)
 
 ---
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=sakshirautela&show_icons=true&theme=tokyonight)
-
----
 
 ## 🛠️ Tech Stack
 
@@ -29,6 +26,7 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 
 ### 🧠 Core CS
 ![DSA](https://img.shields.io/badge/DSA-FF6600?style=for-the-badge&logo=java&logoColor=white)
@@ -63,5 +61,14 @@
 - Advanced Computer Vision techniques  
 - System Design principles  
 - Competitive Programming in C++  
+
+
+
+---
+[![trophy](https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+---
+## 🎥 Demo
+![App Demo](https://media.giphy.com/media/your-demo-link.gif)
 
 ---
