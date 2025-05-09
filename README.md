@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Sakshi Rautela 
 
 **AI/ML Enthusiast | Full-Stack Developer | Java Develper | Problem Solver**  
-📍 Greater Noida, Uttarpradesh | ✉️ techsakshirautela@gmail.com  
+📍 Greater Noida, Uttarpradesh | ✉️ techsakshirautela@gmail.com   
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sakshi-rautela-b1823a349/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/sakshirautela/)
