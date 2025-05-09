@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sakshirautela/static/css/main.02ccb836.css",
+    "main.js": "/sakshirautela/static/js/main.53ca1a88.js",
+    "static/js/453.4eafdc4c.chunk.js": "/sakshirautela/static/js/453.4eafdc4c.chunk.js",
+    "index.html": "/sakshirautela/index.html",
+    "main.02ccb836.css.map": "/sakshirautela/static/css/main.02ccb836.css.map",
+    "main.53ca1a88.js.map": "/sakshirautela/static/js/main.53ca1a88.js.map",
+    "453.4eafdc4c.chunk.js.map": "/sakshirautela/static/js/453.4eafdc4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02ccb836.css",
+    "static/js/main.53ca1a88.js"
+  ]
+}
