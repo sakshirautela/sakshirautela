@@ -1,43 +1,31 @@
-import React from 'react';
-import './style/Skills.css';
+import SkillCard from './SkillCard';
+const Skills = () => {
+    const skillCategories = [
+        {
+            title: "Front-end Development",
+            skills: ["HTML5, CSS3, JavaScript (ES6+)", "React, Vue.js, Angular (Choose what applies)", "Tailwind CSS, Bootstrap"]
+        },
+        {
+            title: "Back-end Development",
+            skills: ["Node.js, Python (Django/Flask), Ruby on Rails (Choose what applies)", "RESTful APIs, GraphQL", "Databases: MongoDB, PostgreSQL, MySQL"]
+        },
+        {
+            title: "Tools & Technologies",
+            skills: ["Git, GitHub/GitLab", "VS Code, WebStorm", "Docker, AWS (Choose what applies)"]
+        }
+    ];
 
-const skills = [
-  { name: 'Python', icon: 'fab fa-python', color: '#3776AB', level: '90%' },
-  { name: 'JavaScript', icon: 'fab fa-js', color: '#F7DF1E', level: '85%' },
-  { name: 'React', icon: 'fab fa-react', color: '#61DAFB', level: '85%' },
-  { name: 'Node.js', icon: 'fab fa-node-js', color: '#339933', level: '80%' },
-  { name: 'TensorFlow', icon: 'fas fa-brain', color: '#FF6F00', level: '75%' },
-  { name: 'Django', icon: 'fab fa-python', color: '#092E20', level: '80%' },
-  { name: 'MongoDB', icon: 'fas fa-database', color: '#47A248', level: '75%' },
-  { name: 'Git', icon: 'fab fa-git-alt', color: '#F05032', level: '85%' },
-  { name: 'Docker', icon: 'fab fa-docker', color: '#2496ED', level: '70%' },
-  { name: 'AWS', icon: 'fab fa-aws', color: '#232F3E', level: '70%' }
-];
-
-export default function Skills() {
-  return (
-    <section id="skills" className="skills">
-      <h2>Technical Skills</h2>
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div key={index} className="skill-card">
-            <div className="skill-header">
-              <i className={`${skill.icon} skill-icon`} style={{ color: skill.color }}></i>
-              <span className="skill-name">{skill.name}</span>
+    return (
+        <section id="skills" className="py-16 px-6 md:px-12 bg-gray-900 text-white shadow-md rounded-lg mx-auto my-8 max-w-4xl">
+            <div className="container mx-auto">
+                <h3 className="text-4xl font-bold text-white mb-8 relative inline-block pb-2 section-heading">Skills</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {skillCategories.map((category, index) => (
+                        <SkillCard key={index} title={category.title} skills={category.skills} />
+                    ))}
+                </div>
             </div>
-            <div className="skill-progress">
-              <div 
-                className="progress-bar" 
-                style={{ 
-                  width: skill.level,
-                  backgroundColor: skill.color
-                }}
-              ></div>
-            </div>
-            <span className="skill-level">{skill.level}</span>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-} 
+        </section>
+    );
+};
+export default Skills;

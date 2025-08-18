@@ -1,35 +1,29 @@
-import React, { useState } from 'react';
 import './style/Header.css';
 
-export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Header = () => {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  return (
-    <header className="header">
-      <div className="header-container">
-        <a href="" className="logo">Sakshi</a>
-        
-        <button className="menu-toggle" onClick={toggleMenu}>
-          <span className={isMenuOpen ? 'open' : ''}></span>
-          <span className={isMenuOpen ? 'open' : ''}></span>
-          <span className={isMenuOpen ? 'open' : ''}></span>
-        </button>
-
-        <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
-          <ul>
-            <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-            <li><a href="#about" onClick={toggleMenu}>About</a></li>
-            <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
-            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-            <li><a href="#education" onClick={toggleMenu}>Education</a></li>
-            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  );
-} 
+    return (
+        <header className="bg-gray-900 shadow-md py-4 px-6 md:px-12 sticky top-0 z-50">
+            <div className="container mx-auto flex justify-between items-center flex-wrap">
+                <h1 className="text-3xl font-bold text-white">Flowa</h1>
+                <nav className="mt-4 md:mt-0">
+                    <ul className="flex space-x-6">
+                        <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-gray-300 hover:text-blue-400 font-medium transition duration-300">ABOUT</a></li>
+                        <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }} className="text-gray-300 hover:text-blue-400 font-medium transition duration-300">SERVICES</a></li>
+                        <li><a href="#resume" onClick={(e) => { e.preventDefault(); scrollToSection('resume'); }} className="text-gray-300 hover:text-blue-400 font-medium transition duration-300">RESUME</a></li>
+                        <li><a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }} className="text-gray-300 hover:text-blue-400 font-medium transition duration-300">PORTFOLIO</a></li>
+                        <li><a href="#blog" onClick={(e) => { e.preventDefault(); scrollToSection('blog'); }} className="text-gray-300 hover:text-blue-400 font-medium transition duration-300">BLOG</a></li>
+                        <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="text-gray-300 hover:text-blue-400 font-medium transition duration-300">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    );
+};
+export default Header;
