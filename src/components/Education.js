@@ -3,18 +3,32 @@ import './style/Education.css';
 
 const education = [
   {
-    degree: 'Bachelor of Technology in Computer Science',
-    school: 'Your University',
-    year: '2020 - 2024',
+    degree: 'Master of Computer Application',
+    school: 'Amity University',
+    year: '2021 - 2024',
     description: 'Specialized in Artificial Intelligence and Machine Learning. Relevant coursework: Data Structures, Algorithms, Machine Learning, Deep Learning, Web Development.',
-    gpa: 'GPA: 3.8/4.0'
+    gpa: 'GPA: 9.03'
   },
   {
-    degree: 'High School Diploma',
+    degree: 'Bachelor of Computer Application',
+    school: 'Dev Bhoomi Uttrakhand University',
+    year: '2021 - 2024',
+    description: 'Specialized in Artificial Intelligence and Machine Learning. Relevant coursework: Data Structures, Algorithms, Machine Learning, Deep Learning, Web Development.',
+    gpa: 'GPA: 9.03'
+  },
+  {
+    degree: 'Senior Secondary Education',
     school: 'Your High School',
-    year: '2018 - 2020',
+    year: '2020 - 2021',
     description: 'Science Stream with Computer Science. Achieved top grades in Mathematics and Computer Science.',
-    gpa: 'Percentage: 95%'
+    gpa: 'Percentage: 89%'
+  },
+  {
+    degree: 'Secondary Education',
+    school: 'Your High School',
+    year: '2018 - 2019',
+    description: 'Science Stream with Computer Science. Achieved top grades in Mathematics with 95% .',
+    gpa: 'Percentage: 94.4%'
   }
 ];
 

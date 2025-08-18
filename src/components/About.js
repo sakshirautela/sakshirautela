@@ -1,33 +1,25 @@
 import React from 'react';
-import './style/About.css';
+import './About.css';
 
-const About = () => {
+function About() {
   return (
-    <section id="about" className="about">
-      <div className="about-container">
-        {/* <div className="about-image">
-          <img src="/profile.jpg" alt="Profile" />
-        </div> */}
-        <h1 className="animate-text">Hi, I'm <span className="highlight">Sakshi</span></h1>
-        <h2 className="animate-text-delay">Full Stack Developer & AI Enthusiast</h2>
-        <p className="animate-text-delay-2">Passionate about creating innovative solutions and exploring the intersection of technology and creativity</p>
-        <div className="cta-buttons">
-          <a href="#projects" className="btn primary">View My Work</a>
-          <a href="#contact" className="btn secondary">Get in Touch</a>
-        </div>
-        <div className="about-content">
+    <section className="about-section py-16 px-6 md:px-12 bg-gray-900 text-white shadow-md rounded-lg mx-auto my-8 max-w-4xl">
+      <div className="container mx-auto">
+        <h2 className="section-heading text-4xl font-bold text-white mb-8 relative inline-block pb-2">About Me</h2>
+        <div className="prose max-w-none text-lg leading-relaxed text-gray-300">
+          <p className="mb-4">
+            Welcome to my portfolio! I'm [Your Name], a [Your Profession/Role] with a strong passion for [Your main interest/area of expertise]. I thrive on [mention a key activity, e.g., solving complex problems, building intuitive user experiences, crafting compelling narratives].
+          </p>
+          <p className="mb-4">
+            My journey in [Your Industry/Field] began [mention when/how, e.g., X years ago, during my studies at Y University]. Since then, I've had the opportunity to work on a variety of projects, from [Project Type A] to [Project Type B], always striving to deliver high-quality and impactful solutions.
+          </p>
           <p>
-            Computer Science Specialist with strong expertise in Java, Python, and Full-Stack Development (React,
-            HTML/CSS, Spring Boot), coupled with hands-on experience in AI/ML model development and system design. Adept at
-            leveraging Data Structures, Algorithms, and OOP principles to build scalable, high-performance
-            applications. Passionate about solving complex problems through clean, efficient code and continuous
-            learning. Committing to deliver user-centric, innovative solutions that bridge technology and real-world
-            impact.
+            I believe in continuous learning and am always exploring new technologies and methodologies to enhance my skills. Outside of work, you can find me [mention a hobby or interest, e.g., hiking, reading, coding for fun, playing music].
           </p>
         </div>
       </div>
     </section>
   );
-};
+}
 
-export default About; 
+export default About;
