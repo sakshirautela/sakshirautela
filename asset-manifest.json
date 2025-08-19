@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/sakshirautela/static/css/main.02ccb836.css",
-    "main.js": "/sakshirautela/static/js/main.53ca1a88.js",
-    "static/js/453.4eafdc4c.chunk.js": "/sakshirautela/static/js/453.4eafdc4c.chunk.js",
+    "main.css": "/sakshirautela/static/css/main.c114a897.css",
+    "main.js": "/sakshirautela/static/js/main.751b9848.js",
+    "static/media/sakshi_resume.pdf": "/sakshirautela/static/media/sakshi_resume.312608e3191df96d2fd9.pdf",
+    "static/media/FlowerPng.jpg": "/sakshirautela/static/media/FlowerPng.91d3ea0ad4ac685f8ff5.jpg",
+    "static/media/logo.png": "/sakshirautela/static/media/logo.de2de9ed2261126792fd.png",
+    "static/media/sun.svg": "/sakshirautela/static/media/sun.a986458e5595b4237f08ee312d301ff3.svg",
+    "static/media/github-dark.svg": "/sakshirautela/static/media/github-dark.dd326b9d1397ddd12c766006b60b0a97.svg",
+    "static/media/github-light.svg": "/sakshirautela/static/media/github-light.f4a3dde7429c7db2d098ebfdb4175701.svg",
+    "static/media/moon.svg": "/sakshirautela/static/media/moon.e8ceccc7130ff6ac43ef85eedc8c3005.svg",
+    "static/media/linkedin-dark.svg": "/sakshirautela/static/media/linkedin-dark.4849f84a7e76fde3e7508ef828cf6d7b.svg",
+    "static/media/linkedin-light.svg": "/sakshirautela/static/media/linkedin-light.f52c806dae34fc7afae25af380bf8c66.svg",
+    "static/media/checkmark-dark.svg": "/sakshirautela/static/media/checkmark-dark.1826eabf0e2181d2f2c88d7b72731149.svg",
+    "static/media/checkmark-light.svg": "/sakshirautela/static/media/checkmark-light.c8c345ee162e424f794588a227e27958.svg",
+    "static/media/twitter-dark.svg": "/sakshirautela/static/media/twitter-dark.c4236a95b1a54627edce47c20a871ef0.svg",
+    "static/media/twitter-light.svg": "/sakshirautela/static/media/twitter-light.4cd529fb546a15c4ba25f77c75614f35.svg",
     "index.html": "/sakshirautela/index.html",
-    "main.02ccb836.css.map": "/sakshirautela/static/css/main.02ccb836.css.map",
-    "main.53ca1a88.js.map": "/sakshirautela/static/js/main.53ca1a88.js.map",
-    "453.4eafdc4c.chunk.js.map": "/sakshirautela/static/js/453.4eafdc4c.chunk.js.map"
+    "main.c114a897.css.map": "/sakshirautela/static/css/main.c114a897.css.map",
+    "main.751b9848.js.map": "/sakshirautela/static/js/main.751b9848.js.map"
   },
   "entrypoints": [
-    "static/css/main.02ccb836.css",
-    "static/js/main.53ca1a88.js"
+    "static/css/main.c114a897.css",
+    "static/js/main.751b9848.js"
   ]
 }
