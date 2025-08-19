@@ -1,24 +1,20 @@
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Contact from './components/Contact';
+import Profile from './components/Profile';
 import './App.css';
-
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header/>
       <About />
-      <Skills />
+      <Profile/>
+      <Experience />
       <Projects />
-      <Education />
       <Contact />
-      <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
