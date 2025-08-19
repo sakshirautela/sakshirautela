@@ -1,45 +1,169 @@
+/* Base reset + variables */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+:root {
+  --text: #1e1e1e;
+  --muted: #555;
+  --border: #a3a3a3;
+  --bg: #ffffff;
+  --bg-soft: #f7f7f7;
+  --primary: #0A66C2;
+  /* LinkedIn-ish blue */
+  --primary-dark: #004182;
+  --shadow: 0 6px 24px rgba(0, 0, 0, .08);
+}
+
+* {
+  box-sizing: border-box
+}
+
+html,
 body {
-    font-family: 'Inter', sans-serif;
-    background: #f7fafc;
-    color: #222;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100%;
+  padding: 0;
+  margin: 0
 }
 
-.App {
-    min-height: 100vh;
-    background: #f7fafc;
+html {
+  scroll-behavior: smooth
 }
 
-.section-heading {
-    position: relative;
-    display: inline-block;
-    font-weight: 700;
-    color: #2d3436;
-    margin-bottom: 1.5rem;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+body {
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
 }
 
-.section-heading::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 70%;
-    height: 4px;
-    border-radius: 9999px;
-    background-color: #6c5ce7;
-    transition: background-color 0.3s ease;
+/* Layout helpers */
+main {
+  display: block
 }
 
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    background: #fff;
-    color: #888;
-    font-size: 1rem;
-    border-top: 1px solid #ececec;
-    margin-top: 2rem;
+section {
+  padding: 5rem 1.5rem
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto
+}
+
+/* Typography */
+.title {
+  font-size: clamp(2rem, 2.5vw + 1.5rem, 3rem);
+  line-height: 1.1;
+  text-align: center;
+  margin: 0 0 1rem;
+  color: var(--text);
+}
+
+.section_text_p1 {
+  text-align: center;
+  font-size: clamp(1rem, .8vw + .9rem, 1.25rem);
+  color: var(--muted);
+  margin: 0 0 .5rem;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .85rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--text);
+  font-weight: 600;
+  background: transparent;
+  color: var(--text);
+  transition: .25s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px)
+}
+
+.btn-sm {
+  padding: .6rem 1rem;
+  font-size: .95rem
+}
+
+.btn-color-1 {
+  background: var(--text);
+  color: #fff;
+  border-color: var(--text);
+}
+
+.btn-color-1:hover {
+  background: #000
+}
+
+.btn-color-2 {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.btn-color-2:hover {
+  background: var(--text);
+  color: #fff;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+/* Utilities */
+.center {
+  text-align: center
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --btn-color: #222222;
+  --btn-text-color: #ffffff;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --btn-color: #222222;
+  --btn-text-color: #ffffff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --btn-color: #f1f1f1;
+  --btn-text-color: #121212;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
