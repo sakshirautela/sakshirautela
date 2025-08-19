@@ -1,22 +1,24 @@
-import React from 'react';
-import Header from './components/Header';
+// src/App.jsx
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import About from './components/About';
-import Profile from './components/Profile';
-import './App.css';
-import Experience from './components/Experience';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-function App() {
+import Footer from './components/Footer';
+import './App.css'
+export default function App() {
   return (
-    <div className="App">
-      <Header/>
-      <About />
-      <Profile/>
-      <Experience />
-      <Projects />
-      <Contact />
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default App;
