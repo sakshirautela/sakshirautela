@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sakshirautela/static/css/main.c114a897.css",
+    "main.css": "/sakshirautela/static/css/main.5db84c5e.css",
     "main.js": "/sakshirautela/static/js/main.751b9848.js",
     "static/media/sakshi_resume.pdf": "/sakshirautela/static/media/sakshi_resume.312608e3191df96d2fd9.pdf",
     "static/media/FlowerPng.jpg": "/sakshirautela/static/media/FlowerPng.91d3ea0ad4ac685f8ff5.jpg",
@@ -16,11 +16,11 @@
     "static/media/twitter-dark.svg": "/sakshirautela/static/media/twitter-dark.c4236a95b1a54627edce47c20a871ef0.svg",
     "static/media/twitter-light.svg": "/sakshirautela/static/media/twitter-light.4cd529fb546a15c4ba25f77c75614f35.svg",
     "index.html": "/sakshirautela/index.html",
-    "main.c114a897.css.map": "/sakshirautela/static/css/main.c114a897.css.map",
+    "main.5db84c5e.css.map": "/sakshirautela/static/css/main.5db84c5e.css.map",
     "main.751b9848.js.map": "/sakshirautela/static/js/main.751b9848.js.map"
   },
   "entrypoints": [
-    "static/css/main.c114a897.css",
+    "static/css/main.5db84c5e.css",
     "static/js/main.751b9848.js"
   ]
 }
