@@ -69,3 +69,4 @@ https://sakshirautela.github.io/sakshirautela/
 [![trophy](https://github-profile-trophy.vercel.app/?username=sakshirautela)](https://github.com/sakshirautela/github-profile-trophy)
 
 ---
+![Sakshi's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sakshirautela&show_icons=true&count_private=true&include_all_commits=true)
