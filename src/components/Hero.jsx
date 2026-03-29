@@ -1,62 +1,73 @@
-import heroImg from '../assets/FlowerPng.jpg';
-import sun from '../assets/sun.svg';
-import moon from '../assets/moon.svg';
-import twitterLight from '../assets/twitter-light.svg';
-import twitterDark from '../assets/twitter-dark.svg';
-import githubLight from '../assets/github-light.svg';
-import githubDark from '../assets/github-dark.svg';
-import linkedinLight from '../assets/linkedin-light.svg';
-import linkedinDark from '../assets/linkedin-dark.svg';
-import CV from '../assets/sakshi_resume.pdf';
-import { useTheme } from '../common/ThemeContext';
-import React from 'react';
-import styles from '../styles/hero.css';
-function Hero() {
-  const { theme } = useTheme();
-  const themeIcon = theme === 'light' ? sun : moon;
-  const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+import "./Hero.css";
 
+export default function Hero() {
   return (
-    <section id="hero" className="container">
-      <div className="colorModeContainer">
-        <img src={heroImg} className="hero" alt="Profile picture of Sakshi Rautela" />
-      </div>
-      <div className="info">
-        <h1>
-          Sakshi
-          <br />
-          Rautela
-        </h1>
-        <h2>Frontend Developer</h2>
-        <span>
-          <a href="https://x.com/sakshii_rautela/" target="_blank" rel="noreferrer">
-            <img src={twitterIcon} alt="Twitter icon" />
-          </a>
-          <a href="https://github.com/sakshirautela" target="_blank" rel="noreferrer">
-            <img src={githubIcon} alt="Github icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/sakshi-rautela-b1823a349/" target="_blank" rel="noreferrer">
-            <img src={linkedinIcon} alt="Linkedin icon" />
-          </a>
-        </span>
-        <p className="description">
-          I’m a passionate student with a strong interest in AI/ML, Java, OOPs, system design, and problem-solving.
-Always learning and exploring, I enjoy building smart, efficient solutions and applying theoretical concepts to
-real-world problems.
-        </p>
-        <button
-          className="hover"
-          onClick={() => window.open(CV, "_blank", "noopener,noreferrer")}
-        >
-          Resume
-        </button>
+    <section id="hero" className="hero">
+      <div className="grid-bg" />
+      <div className="noise" />
 
+      <div className="hero-orb hero-orb-1" />
+      <div className="hero-orb hero-orb-2" />
+
+      <div className="container hero-content">
+        <div className="hero-badge">
+          <span className="badge-dot" />
+          <span>Available for full-time SDE roles — July 2026</span>
+        </div>
+
+        <h1 className="hero-title">
+          <span className="hero-greeting">Hi, I'm</span>
+          <br />
+          <span className="hero-name">Sakshi</span>
+          <br />
+          <span className="hero-name italic">Rautela.</span>
+        </h1>
+
+        <p className="hero-sub">
+          Backend Engineer & Final-year MCA student building{" "}
+          <span className="highlight">scalable APIs</span>,{" "}
+          <span className="highlight">Spring Boot systems</span>, and{" "}
+          <span className="highlight">AI-powered backends</span> — ready to contribute from day one.
+        </p>
+
+        <div className="hero-stack">
+          {["Java", "Spring Boot", "Python", "PostgreSQL", "Docker", "REST APIs"].map((t) => (
+            <span key={t} className="stack-tag">{t}</span>
+          ))}
+        </div>
+
+        <div className="hero-actions">
+          <a href="#projects" className="btn-primary">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" className="btn-ghost">Get in Touch</a>
+        </div>
+
+        <div className="hero-stats">
+          <div className="stat">
+            <span className="stat-num">1000+</span>
+            <span className="stat-label">LeetCode Problems</span>
+          </div>
+          <div className="stat-divider" />
+          <div className="stat">
+            <span className="stat-num">3</span>
+            <span className="stat-label">Production Projects</span>
+          </div>
+          <div className="stat-divider" />
+          <div className="stat">
+            <span className="stat-num">9.02</span>
+            <span className="stat-label">CGPA (BCA)</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="hero-scroll-hint">
+        <span>scroll</span>
+        <div className="scroll-line" />
       </div>
     </section>
-
   );
 }
-
-export default Hero;

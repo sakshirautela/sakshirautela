@@ -1,58 +1,61 @@
-import styles from '../styles/skills.module.css';
-import checkMarkIconDark from '../assets/checkmark-dark.svg';
-import checkMarkIconLight from '../assets/checkmark-light.svg';
-import SkillList from '../common/SkillList';
-import { useTheme } from '../common/ThemeContext';
+import "./Skills.css";
 
-function Skills() {
-  const { theme } = useTheme();
-  const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
+const skillGroups = [
+  {
+    label: "Languages",
+    icon: "{ }",
+    skills: ["Java", "Python", "JavaScript", "C", "SQL"],
+  },
+  {
+    label: "Backend",
+    icon: "⚙",
+    skills: ["Spring Boot", "REST APIs", "GraphQL", "gRPC", "Microservices", "JWT/OAuth2", "Django"],
+  },
+  {
+    label: "Databases",
+    icon: "◈",
+    skills: ["PostgreSQL", "JPA/Hibernate", "MySQL", "MongoDB", "Vector Databases"],
+  },
+  {
+    label: "DevOps & Tools",
+    icon: "⊞",
+    skills: ["Docker", "Git", "CI/CD", "Maven", "Postman"],
+  },
+  {
+    label: "Data & AI",
+    icon: "✦",
+    skills: ["Apache Kafka", "RabbitMQ", "LangChain", "PyTorch", "Python ML Stack", "GCP"],
+  },
+  {
+    label: "Frontend",
+    icon: "◻",
+    skills: ["React", "JavaScript", "HTML/CSS"],
+  },
+];
 
+export default function Skills() {
   return (
-    <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Skills</h1>
+    <section id="skills" style={{ background: "var(--bg2)" }}>
+      <div className="container">
+        <p className="section-label">Expertise</p>
+        <h2 className="section-title">Technical Skills</h2>
 
-      {/* Programming Languages */}
-      <div className={styles.skillList}>
-      <h1>Language : </h1>:
-        <SkillList src={checkMarkIcon} skill="Java" />
-        <SkillList src={checkMarkIcon} skill="Python" />
-        <SkillList src={checkMarkIcon} skill="C++" />
-        <SkillList src={checkMarkIcon} skill="JavaScript" />
-      </div>
-      <hr />
-
-      {/* Frameworks & Tools */}
-      <div className={styles.skillList}>
-      <h1>FreameWorks & Tools :</h1>
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="Spring Boot" />
-        <SkillList src={checkMarkIcon} skill="REST APIs" />
-        <SkillList src={checkMarkIcon} skill="Git & GitHub" />
-      </div>
-      <hr />
-
-      {/* AI/ML & Advanced Tech */}
-      <div className={styles.skillList}>
-      <h1> AI/ML : </h1>:
-        <SkillList src={checkMarkIcon} skill="AI / ML" />
-        <SkillList src={checkMarkIcon} skill="TensorFlow" />
-        <SkillList src={checkMarkIcon} skill="Scikit-learn" />
-        <SkillList src={checkMarkIcon} skill="OpenCV" />
-        <SkillList src={checkMarkIcon} skill="LangChain" />
-      </div>
-      <hr />
-
-      {/* Core Concepts */}
-      <div className={styles.skillList}>
-      <h1>Core Concepts : </h1>:
-        <SkillList src={checkMarkIcon} skill="Data Structures & Algorithms" />
-        <SkillList src={checkMarkIcon} skill="Object-Oriented Programming (OOPs)" />
-        <SkillList src={checkMarkIcon} skill="System Design" />
-        <SkillList src={checkMarkIcon} skill="NLP & Generative AI" />
+        <div className="skills-grid">
+          {skillGroups.map((group) => (
+            <div key={group.label} className="skill-card" data-hover>
+              <div className="skill-card-header">
+                <span className="skill-icon">{group.icon}</span>
+                <span className="skill-group-label">{group.label}</span>
+              </div>
+              <div className="skill-tags">
+                {group.skills.map((s) => (
+                  <span key={s} className="skill-pill">{s}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
-
-export default Skills;
