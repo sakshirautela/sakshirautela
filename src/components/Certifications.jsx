@@ -1,5 +1,4 @@
-import "./Certifications.css";
-
+import  "../styles/Certifications.css";
 const certs = [
   {
     title: "Software Engineer Intern Certification",

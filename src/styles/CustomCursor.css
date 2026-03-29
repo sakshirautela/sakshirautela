@@ -1,50 +1,35 @@
-/* Custom Cursor Styles */
-.cursor-dot,
-.cursor-ring {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  border-radius: 50%;
-  transition: all 0.1s ease;
-}
-
 .cursor-dot {
+  position: fixed;
   width: 6px;
   height: 6px;
-  background: var(--accent);
+  background: var(--accent2);
+  border-radius: 50%;
   transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999999;
+  transition: width .2s, height .2s, background .2s
 }
 
 .cursor-ring {
-  width: 40px;
-  height: 40px;
-  border: 2px solid var(--accent);
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid rgba(124, 106, 245, .5);
+  border-radius: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.5;
+  pointer-events: none;
+  z-index: 9998;
+  transition: width .3s, height .3s, border-color .3s
 }
 
-.cursor-dot.hover,
+.cursor-dot.hover {
+  width: 10px;
+  height: 10px;
+  background: var(--gold)
+}
+
 .cursor-ring.hover {
-  transform: translate(-50%, -50%) scale(1.5);
-}
-
-.cursor-ring.hover {
-  opacity: 0.8;
-}
-
-/* Hide default cursor */
-* {
-  cursor: none !important;
-}
-
-/* Show default cursor on mobile */
-@media (max-width: 768px) {
-  .cursor-dot,
-  .cursor-ring {
-    display: none;
-  }
-
-  * {
-    cursor: auto !important;
-  }
+  width: 50px;
+  height: 50px;
+  border-color: var(--gold)
 }

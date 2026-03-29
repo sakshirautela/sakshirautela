@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import "./Navbar.css";
-
+import "../styles/Navbar.css";  
 const links = [
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "projects", label: "Projects" },
-  { id: "education", label: "Education" },
-  { id: "contact", label: "Contact" },
+  { id: "about", idx: "01", label: "About" },
+  { id: "skills", idx: "02", label: "Skills" },
+  { id: "projects", idx: "03", label: "Projects" },
+  { id: "education", idx: "04", label: "Education" },
+  { id: "contact", idx: "05", label: "Contact" },
 ];
 
 export default function Navbar({ activeSection }) {
@@ -24,7 +23,7 @@ export default function Navbar({ activeSection }) {
       <div className="nav-inner">
         <a href="#hero" className="nav-logo">
           <span className="logo-bracket">&lt;</span>
-          SR
+          sakshirautela
           <span className="logo-bracket">/&gt;</span>
         </a>
 
@@ -36,7 +35,7 @@ export default function Navbar({ activeSection }) {
                 className={activeSection === id ? "active" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                <span className="link-num">0{links.indexOf({ id, label }) + 1}.</span>
+                <span className="link-num">{links.find((link) => link.id === id)?.idx}.</span>
                 {label}
               </a>
             </li>

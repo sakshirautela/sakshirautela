@@ -1,12 +1,11 @@
-import "./Education.css";
-
+import "../styles/Education.css";
 const edu = [
   {
     degree: "Master of Computer Applications",
     short: "MCA",
     school: "Amity University, Noida",
-    period: "July 2024 – July 2026",
-    specialization: "Full-Stack Development & Generative AI",
+    period: "July 2024 – July 2026(expected)",
+    specialization: "Artificial Intelligence & Machine Learning",
     current: true,
   },
   {

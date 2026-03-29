@@ -1,20 +1,19 @@
-import "./Skills.css";
-
+import "../styles/Skills.css";
 const skillGroups = [
   {
     label: "Languages",
     icon: "{ }",
-    skills: ["Java", "Python", "JavaScript", "C", "SQL"],
+    skills: ["Java", "Python", "JavaScript", "SQL"],
   },
   {
     label: "Backend",
     icon: "⚙",
-    skills: ["Spring Boot", "REST APIs", "GraphQL", "gRPC", "Microservices", "JWT/OAuth2", "Django"],
+    skills: ["Spring Boot", "REST APIs", "GraphQL", "Microservices", "JWT/OAuth2"],
   },
   {
     label: "Databases",
     icon: "◈",
-    skills: ["PostgreSQL", "JPA/Hibernate", "MySQL", "MongoDB", "Vector Databases"],
+    skills: ["PostgreSQL","MySQL", "Vector Databases"],
   },
   {
     label: "DevOps & Tools",
@@ -24,7 +23,7 @@ const skillGroups = [
   {
     label: "Data & AI",
     icon: "✦",
-    skills: ["Apache Kafka", "RabbitMQ", "LangChain", "PyTorch", "Python ML Stack", "GCP"],
+    skills: ["LangChain", "PyTorch", "Python ML Stack" ,"Data Analysis","RAG"],
   },
   {
     label: "Frontend",
