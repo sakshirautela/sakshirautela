@@ -23,7 +23,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-sub">
-          Backend Engineer & Final-year MCA student building{" "}
+          SDE & Final-year MCA student building{" "}
           <span className="highlight">scalable APIs</span>,{" "}
           <span className="highlight">Spring Boot systems</span>, and{" "}
           <span className="highlight">AI-powered backends</span> — ready to contribute from day one.
