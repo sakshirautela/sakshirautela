@@ -1,161 +1,127 @@
-/* Education Section Styles */
+#education {
+    background: var(--bg2)
+}
+
 .edu-timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  animation: fadeUp 0.6s ease 0.2s both;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 700px
 }
 
 .edu-item {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.edu-item:last-child {
-  margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 24px;
+    align-items: flex-start
 }
 
 .edu-track {
-  position: relative;
-  width: 20px;
-  flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px
 }
 
 .edu-dot {
-  width: 20px;
-  height: 20px;
-  background: var(--border);
-  border-radius: 50%;
-  position: relative;
-  z-index: 2;
-  transition: all 0.3s ease;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--border);
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+    transition: all .3s
 }
 
 .edu-dot.active {
-  background: var(--accent);
-  box-shadow: 0 0 20px rgba(124, 106, 245, 0.5);
-  animation: pulse-glow 2s ease-in-out infinite;
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 16px rgba(124, 106, 245, .5);
+    animation: pulse-glow 2.5s ease-in-out infinite
 }
 
 .edu-line {
-  position: absolute;
-  top: 20px;
-  left: 9px;
-  width: 2px;
-  height: calc(100% + 60px);
-  background: var(--border);
+    width: 2px;
+    flex: 1;
+    min-height: 60px;
+    background: linear-gradient(to bottom, var(--accent), var(--border));
+    margin: 8px 0
 }
 
 .edu-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 32px;
-  flex: 1;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.edu-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(124, 106, 245, 0.15);
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all .3s
 }
 
 .edu-card.current {
-  border-color: var(--accent);
-  background: linear-gradient(135deg, var(--surface), rgba(124, 106, 245, 0.05));
+    border-color: rgba(124, 106, 245, .4);
+    background: rgba(124, 106, 245, .04)
+}
+
+.edu-card:hover {
+    border-color: var(--accent);
+    transform: translateX(4px)
 }
 
 .edu-badge {
-  position: absolute;
-  top: -12px;
-  right: 24px;
-  background: var(--accent);
-  color: white;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase
 }
 
 .edu-degree-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px
 }
 
 .edu-short {
-  background: var(--accent);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    background: rgba(124, 106, 245, .1);
+    padding: 2px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(124, 106, 245, .3)
 }
 
 .edu-degree {
-  font-family: var(--font-display);
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--text);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text)
 }
 
 .edu-school {
-  font-size: 16px;
-  color: var(--accent);
-  font-weight: 500;
-  margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 8px
 }
 
 .edu-spec {
-  font-size: 14px;
-  color: var(--muted);
-  margin-bottom: 12px;
-  font-style: italic;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent2);
+    margin-bottom: 8px
 }
 
 .edu-period {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--dim);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .edu-item {
-    gap: 24px;
-    margin-bottom: 40px;
-  }
-
-  .edu-card {
-    padding: 24px;
-  }
-
-  .edu-degree-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .edu-degree {
-    font-size: 20px;
-  }
-
-  .edu-badge {
-    position: static;
-    align-self: flex-start;
-    margin-bottom: 16px;
-  }
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--dim);
+    letter-spacing: .5px
 }

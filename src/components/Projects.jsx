@@ -1,5 +1,4 @@
-import "./Projects.css";
-
+import "../styles/Projects.css";
 const projects = [
   {
     num: "01",
@@ -15,11 +14,12 @@ const projects = [
       "JPA/Hibernate ORM with query optimization",
     ],
     accent: "#7c6af5",
+    link:"https://github.com/sakshirautela/BookMyRides.git",
   },
   {
     num: "02",
     title: "Flood Rescue System",
-    subtitle: "Backend API & NLP Application",
+    subtitle: "Fullstack web app  & NLP Application",
     description:
       "Designed REST API endpoints connecting an NLP classification backend to a React frontend for real-time tweet stream analysis during flood events. Built a Python scikit-learn pipeline achieving 88% accuracy on live data.",
     tags: ["Python", "REST APIs", "React", "scikit-learn", "NLP", "ML"],
@@ -30,6 +30,7 @@ const projects = [
       "End-to-end: ingestion → prediction → API response",
     ],
     accent: "#38bdf8",
+    link:"https://github.com/sakshirautela/helpinghands.git",
   },
   {
     num: "03",
@@ -45,6 +46,7 @@ const projects = [
       "60+ epoch training with pipeline optimization",
     ],
     accent: "#c084fc",
+    link:"https://github.com/sakshirautela/LargeLanguageModel.git",
   },
 ];
 
@@ -65,7 +67,7 @@ export default function Projects() {
                     <h3 className="project-title">{p.title}</h3>
                     <p className="project-subtitle">{p.subtitle}</p>
                   </div>
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="project-github">
+                  <a href={p.link} target="_blank" rel="noreferrer" className="project-github">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                     </svg>

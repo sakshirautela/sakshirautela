@@ -1,5 +1,4 @@
-import "./Contact.css";
-
+import "../styles/Contact.css";
 export default function Contact() {
   return (
     <section id="contact" style={{ background: "var(--bg2)" }}>
@@ -12,8 +11,8 @@ export default function Contact() {
               <em>something great.</em>
             </h2>
             <p className="contact-desc">
-              I'm actively looking for my first full-time SDE role. If you have an opportunity
-              that matches my backend engineering skills, I'd love to connect.
+              I'm actively looking for SDE role. If you have an opportunity
+              that matches my skills, I'd love to connect.
             </p>
 
             <div className="contact-details">
@@ -51,7 +50,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="contact-label">Location</p>
-                  <p className="contact-value">Greater Noida, UP — Open to Noida WFO</p>
+                  <p className="contact-value">Greater Noida, UP — Open to Noida WFO(or relocation)</p>
                 </div>
               </div>
             </div>
@@ -68,7 +67,7 @@ export default function Contact() {
               <h3 className="cta-title">Immediate Joiner</h3>
               <p className="cta-desc">
                 Final-year MCA student available immediately. No notice period required.
-                Actively looking for backend/SDE roles in Noida.
+                Actively looking for SDE/Machine-Learning roles in Noida(or Ready to relocate).
               </p>
 
               <div className="cta-actions">
@@ -78,14 +77,19 @@ export default function Contact() {
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="btn-ghost" style={{ width: "100%", justifyContent: "center" }}>
+                <a href="https://www.linkedin.com/in/sakshi-b1823a349/" target="_blank" rel="noreferrer" className="btn-ghost" style={{ width: "100%", justifyContent: "center" }}>
                   Connect on LinkedIn
                 </a>
               </div>
 
               <div className="cta-tags">
-                <span>✓ Backend Engineering</span>
+                <span>✓ Frontend Developer </span>
+                <span>✓ Backend Developer</span>
+                <span>✓ Fullstack Developer</span>
+                <span>✓ ReactJs</span>
                 <span>✓ Spring Boot</span>
+                <span>✓ Data Structures </span>
+                <span>✓ System Design</span>
                 <span>✓ REST APIs</span>
                 <span>✓ Immediate Join</span>
               </div>
@@ -95,7 +99,6 @@ export default function Contact() {
 
         <div className="footer-line">
           <p>Designed & built by Sakshi Rautela — 2026</p>
-          <p className="footer-stack">React · Spring Boot · PostgreSQL</p>
         </div>
       </div>
     </section>

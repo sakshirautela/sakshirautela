@@ -7,8 +7,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
-import CustomCursor from "./components/CustomCursor";
-// import "./components/global.css";
+import "./styles/global.css";
 export default function App() {
   const [activeSection, setActiveSection] = useState("hero");
   const [loaded, setLoaded] = useState(false);
@@ -33,7 +32,7 @@ export default function App() {
 
   return (
     <div className={`app ${loaded ? "loaded" : ""}`}>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar activeSection={activeSection} />
       <main>
         <Hero />

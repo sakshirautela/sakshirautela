@@ -1,5 +1,4 @@
-import "./Hero.css";
-
+import "../styles/Hero.css";
 export default function Hero() {
   return (
     <section id="hero" className="hero">
@@ -12,7 +11,7 @@ export default function Hero() {
       <div className="container hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          <span>Available for full-time SDE roles — July 2026</span>
+          <span>Available for full-time SDE roles</span>
         </div>
 
         <h1 className="hero-title">
@@ -31,7 +30,7 @@ export default function Hero() {
         </p>
 
         <div className="hero-stack">
-          {["Java", "Spring Boot", "Python", "PostgreSQL", "Docker", "REST APIs"].map((t) => (
+          {["Java", "Spring Boot", "Python","reactJs", "PostgreSQL", "Docker", "REST APIs","System Design", "Data-Structures", "Machine Learning"].map((t) => (
             <span key={t} className="stack-tag">{t}</span>
           ))}
         </div>
