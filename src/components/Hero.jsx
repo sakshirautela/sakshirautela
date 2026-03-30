@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="container hero-content">
         <div className="hero-badge">
           <span className="badge-dot" />
-          <span>Available for full-time SDE roles</span>
+          <span>Available for full-time SDE roles / Summer Internship </span>
         </div>
 
         <h1 className="hero-title">

@@ -140,3 +140,49 @@
     border-color: color-mix(in srgb, var(--tag-color, var(--accent)) 30%, transparent);
     background: color-mix(in srgb, var(--tag-color, var(--accent)) 8%, transparent)
 }
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.show-more-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* gradient hover overlay */
+.show-more-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--accent), var(--accent2));
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+
+.show-more-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.show-more-btn:hover {
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.show-more-btn:hover::after {
+    opacity: 1;
+}
