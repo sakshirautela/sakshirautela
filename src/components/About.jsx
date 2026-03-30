@@ -74,10 +74,6 @@ export default function About() {
                   <span className="info-val">Noida WFO (remote/relocation)</span>
                 </div>
                 <div className="info-row">
-                  <span className="info-key">Notice</span>
-                  <span className="info-val green">Immediate</span>
-                </div>
-                <div className="info-row">
                   <span className="info-key">Available</span>
                   <span className="info-val green">Immediate</span>
 
