@@ -41,7 +41,7 @@ export default function Navbar({ activeSection }) {
             </li>
           ))}
           <li>
-<a href="/sakshi_resume.pdf" download="sakshi_resume.pdf" className="nav-cta">
+<a href="src/assets/sakshi_resume.pdf" download="sakshi_resume.pdf" className="nav-cta">
   Hire Me
 </a>          </li>
         </ul>
