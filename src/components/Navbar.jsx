@@ -41,10 +41,9 @@ export default function Navbar({ activeSection }) {
             </li>
           ))}
           <li>
-            <a href="mailto:techsakshirautela@gmail.com" className="nav-cta">
-              Hire Me
-            </a>
-          </li>
+<a href="/sakshi_resume.pdf" download="sakshi_resume.pdf" className="nav-cta">
+  Hire Me
+</a>          </li>
         </ul>
 
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
