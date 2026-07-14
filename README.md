@@ -2,7 +2,7 @@
 
 **AI/ML Enthusiast | Full-Stack Developer | Java Develper | Problem Solver**  
 **Open to opportunities**
-📍 Greater Noida, Uttarpradesh | ✉️ techsakshirautela@gmail.com   
+📍 Greater Noida, Uttarpradesh | ✉️ sakshi.rautela780@gmail.com   
 https://sakshirautela.github.io/sakshirautela/
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sakshi-b1823a349/)
