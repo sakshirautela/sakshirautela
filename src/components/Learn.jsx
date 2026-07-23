@@ -16,6 +16,22 @@ const edu = [
     specialization: "CGPA: 9.02 / 10 — Distinction",
     current: false,
   },
+  {
+    degree: "Higher Secondary Education",
+    short: "12th",
+    school: "Dev Bhoomi Uttarakhand University",
+    period: "Aug 2019 – June 2021",
+    specialization: "XII Science (PCM) — 89% ",
+    current: false, 
+  },
+  {
+    degree: " Secondary Education",
+    short: "10th",
+    school: "Dev Bhoomi Uttarakhand University",
+    period: "Aug 2017 – June 2019",
+    specialization: "X Science — 94.4% ",
+    current: false, 
+  },
 ];
 
 export default function Education() {

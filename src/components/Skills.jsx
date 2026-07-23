@@ -13,7 +13,7 @@ const skillGroups = [
   {
     label: "Databases",
     icon: "◈",
-    skills: ["PostgreSQL","MySQL", "Vector Databases"],
+    skills: ["MySQL", "Vector Databases"],
   },
   {
     label: "DevOps & Tools",
