@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap');
 
 :root {
-  --bg: #0a0a0f;
-  --bg2: #0f0f1a;
-  --bg3: #13131f;
-  --surface: #16162a;
-  --border: #2a2a45;
-  --accent: #7c6af5;
-  --accent2: #c084fc;
-  --accent3: #38bdf8;
-  --gold: #f0b429;
-  --text: #e8e8f0;
-  --muted: #8888aa;
-  --dim: #4a4a6a;
+  /* Standard accessible palette */
+  --bg: #f7fafb;        /* very light neutral background */
+  --bg2: #ffffff;       /* default sections */
+  --bg3: #f1f5f9;       /* subtle gray background */
+  --surface: #ffffff;   /* cards and surfaces */
+  --border: #e6e9ee;    /* light border */
+  --accent: #2563eb;    /* vivid blue (primary attention) */
+  --accent2: #f97316;   /* warm orange (secondary) */
+  --accent3: #06b6d4;   /* cyan accent */
+  --gold: #f59e0b;      /* gold for highlights */
+  --text: #0f172a;      /* high-contrast dark text */
+  --muted: #6b7280;     /* muted gray */
+  --dim: #9ca3af;       /* dimmer gray */
   --font-display: 'DM Serif Display', serif;
   --font-mono: 'Space Mono', monospace;
   --font-body: 'Syne', sans-serif;

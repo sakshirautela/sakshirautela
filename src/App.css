@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 :root {
-  --text: #1e1e1e;
-  --muted: #555;
-  --border: #a3a3a3;
-  --bg: #ffffff;
-  --bg-soft: #f7f7f7;
-  --primary: #0A66C2;
-  --primary-dark: #004182;
-  --shadow: 0 6px 24px rgba(0, 0, 0, .08);
+  --text: #0f172a;
+  --muted: #6b7280;
+  --border: #e6e9ee;
+  --bg: #f7fafb;
+  --bg-soft: #f1f5f9;
+  --primary: #2563eb; /* vivid blue */
+  --primary-dark: #1e40af;
+  --shadow: 0 10px 30px rgba(15,23,42,0.08);
 }
 
 * {
@@ -134,22 +134,23 @@ img {
   display: grid;
   gap: 1.5rem
 }
+
 :root {
-  --bg-color: #ffffff;
-  --text-color: #222222;
-  --btn-color: #222222;
+  --bg-color: #f7fafb;
+  --text-color: #0f172a;
+  --btn-color: #2563eb;
   --btn-text-color: #ffffff;
 }
 
 body.light {
-  --bg-color: #ffffff;
-  --text-color: #222222;
-  --btn-color: #222222;
+  --bg-color: #f7fafb;
+  --text-color: #0f172a;
+  --btn-color: #2563eb;
   --btn-text-color: #ffffff;
 }
 
 body.dark {
-  --bg-color: #121212;
+  --bg-color: rgb(234, 223, 210);
   --text-color: #f1f1f1;
   --btn-color: #f1f1f1;
   --btn-text-color: #121212;

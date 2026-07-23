@@ -1,57 +1,79 @@
-import { useState, useEffect } from "react";
-import "../styles/Navbar.css";  
-const links = [
-  { id: "about", idx: "01", label: "About" },
-  { id: "skills", idx: "02", label: "Skills" },
-  { id: "projects", idx: "03", label: "Projects" },
-  { id: "education", idx: "04", label: "Education" },
-  { id: "contact", idx: "05", label: "Contact" },
+import "../styles/Navbar.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import {NavLink} from "react-router-dom";
+const navLinks = [
+  { path: "/", label: "Home" },
+  { path: "/about", label: "About" },
+  // { path: "/learn", label: "Learn" },
+  { path: "/portfolio", label: "Portfolio" },
+  { path: "/blog", label: "Blog" },
+  { path: "/contact", label: "Contact" },
+];
+const socialLinks = [
+  {
+    name: "GitHub",
+    url: "https://github.com/sakshirautela",
+    icon: "fab fa-github",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/sakshi-b1823a349/",
+    icon: "fab fa-linkedin",
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/sakshii_rautela",
+    icon: "fab fa-x-twitter",
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/sakshii_rautelaa",
+    icon: "fab fa-instagram",
+  },
 ];
 
 export default function Navbar({ activeSection }) {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <header className="navbar">
       <div className="nav-inner">
-        <a href="#hero" className="nav-logo">
-          <span className="logo-bracket">&lt;</span>
-          sakshirautela
-          <span className="logo-bracket">/&gt;</span>
-        </a>
+        {/* Logo */}
+        <div className="nav-logo-container">
+          <a href="#home" className="nav-logo">
+            AP
+          </a>
+        </div>
 
-        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          {links.map(({ id, label }) => (
-            <li key={id}>
-              <a
-                href={`#${id}`}
-                className={activeSection === id ? "active" : ""}
-                onClick={() => setMenuOpen(false)}
+        {/* Navigation */}
+        <ul className="nav-links">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <NavLink
+                to={link.path}
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
               >
-                <span className="link-num">{links.find((link) => link.id === id)?.idx}.</span>
-                {label}
-              </a>
+                {link.label}
+              </NavLink>
             </li>
           ))}
-          <li>
-<a href="src/assets/sakshi_resume.pdf" download="sakshi_resume.pdf" className="nav-cta">
-  Hire Me
-</a>          </li>
         </ul>
 
-        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          <span className={menuOpen ? "open" : ""} />
-          <span className={menuOpen ? "open" : ""} />
-          <span className={menuOpen ? "open" : ""} />
-        </button>
+        {/* Social Media */}
+        <div className="nav-social">
+          {socialLinks.map((social) => (
+            <a
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
+            >
+              <i className={social.icon}></i>
+            </a>
+          ))}
+        </div>
       </div>
-    </nav>
+    </header>
   );
 }
