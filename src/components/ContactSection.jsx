@@ -16,60 +16,72 @@ export default function ContactSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.message) return;
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) return;
 
     setStatus("sending");
     setStatusMessage("Sending your message...");
 
+    const senderName = formData.name.trim();
+    const senderEmail = formData.email.trim();
+    const senderMessage = formData.message.trim();
+
     try {
-      // First attempt: Try sending via Web3Forms or FormSubmit public free endpoint for React static portfolios
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const recipientEmail = personalInfo.email || "sakshi.rautela780@gmail.com";
+      const response = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "c2c5dc51-69f8-4796-98ec-68e16e4544d6", // Public web form access key or custom email delivery
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          subject: `Portfolio Message from ${formData.name}`,
-          to_email: personalInfo.email,
+          name: senderName,
+          email: senderEmail,
+          message: senderMessage,
+          _subject: `New Portfolio Message from ${senderName}`,
+          _captcha: "false",
+          _template: "table",
         }),
       });
 
       const result = await response.json();
 
-      if (response.ok && (result.success || result.status === 200)) {
+      if (response.ok && (result.success === "true" || result.success === true || result.message)) {
         setStatus("success");
-        setStatusMessage("Thank you! Your message has been sent successfully.");
+        setStatusMessage(
+          result.message && result.message.includes("Activation")
+            ? "Message submitted! (Check your inbox to click the one-time FormSubmit activation link)."
+            : "Thank you! Your message has been sent successfully. I'll get back to you soon! ✓"
+        );
+        // Reset entered input data on successful send
         setFormData({ name: "", email: "", message: "" });
       } else {
-        // Fallback: Open user email client
-        window.location.href = `mailto:${personalInfo.email}?subject=${encodeURIComponent(
-          `Portfolio Message from ${formData.name}`
+        // Fallback to mailto
+        window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(
+          `Portfolio Message from ${senderName}`
         )}&body=${encodeURIComponent(
-          `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+          `Name: ${senderName}\nEmail: ${senderEmail}\n\nMessage:\n${senderMessage}`
         )}`;
         setStatus("success");
-        setStatusMessage("Opening email client to send your message...");
+        setStatusMessage("Message prepared in your email client. Thank you!");
+        setFormData({ name: "", email: "", message: "" });
       }
     } catch (err) {
-      console.warn("Direct send fallback to mailto:", err);
-      window.location.href = `mailto:${personalInfo.email}?subject=${encodeURIComponent(
-        `Portfolio Message from ${formData.name}`
+      console.warn("Direct form submit error, opening mailto fallback:", err);
+      const recipientEmail = personalInfo.email || "sakshi.rautela780@gmail.com";
+      window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(
+        `Portfolio Message from ${senderName}`
       )}&body=${encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+        `Name: ${senderName}\nEmail: ${senderEmail}\n\nMessage:\n${senderMessage}`
       )}`;
       setStatus("success");
-      setStatusMessage("Opening email client to complete sending...");
+      setStatusMessage("Opening email client to send your message...");
+      setFormData({ name: "", email: "", message: "" });
     }
 
     setTimeout(() => {
       setStatus("idle");
       setStatusMessage("");
-    }, 6000);
+    }, 8000);
   };
 
   const scrollToTop = () => {
@@ -150,7 +162,7 @@ export default function ContactSection() {
               <input
                 type="text"
                 id="name"
-                placeholder="your name "
+                placeholder="Ada Lovelace"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
@@ -193,16 +205,17 @@ export default function ContactSection() {
                 {status === "sending"
                   ? "Sending Message..."
                   : status === "success"
-                    ? "Sent Successfully! ✓"
-                    : "Send Message"}
+                  ? "Sent Successfully! ✓"
+                  : "Send Message"}
               </span>
               <span className="arrow">→</span>
             </button>
 
             {statusMessage && (
               <div
-                className={`form-feedback-notice ${status === "success" ? "success" : status === "error" ? "error" : "info"
-                  }`}
+                className={`form-feedback-notice ${
+                  status === "success" ? "success" : status === "error" ? "error" : "info"
+                }`}
               >
                 {statusMessage}
               </div>
