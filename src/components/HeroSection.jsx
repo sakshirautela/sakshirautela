@@ -1,7 +1,6 @@
 import {
   personalInfo,
   fastStats,
-  aiAssistantLinks,
   tableOfContents
 } from "../data/portfolioData";
 import "../styles/HeroSection.css";
@@ -51,24 +50,6 @@ export default function HeroSection() {
             Created <strong>22+ open source repositories</strong> spanning PyTorch LLMs (GPT-2), Clinical DocAI, MCP agent tooling, and Spring Boot systems.
           </li>
         </ul>
-      </div>
-
-      {/* Ask an AI Assistant Bar */}
-      <div className="hero-assistant-section">
-        <span className="assistant-label">Or ask an assistant</span>
-        <div className="assistant-pills">
-          {aiAssistantLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pill-link"
-            >
-              <span>{link.name}</span>
-            </a>
-          ))}
-        </div>
       </div>
 
       {/* Scroll indicator & Fast stats grid */}

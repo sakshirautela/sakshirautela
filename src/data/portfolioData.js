@@ -27,23 +27,6 @@ export const fastStats = [
   { label: "GitHub Repositories", value: "22+", icon: "github" },
   { label: "BCA CGPA (Distinction)", value: "9.02", icon: "award" },
   { label: "MCA Specialization", value: "AI / ML", icon: "cpu" }
-];
-
-export const aiAssistantLinks = [
-  {
-    name: "talk to chatgpt about me →",
-    url: "https://chatgpt.com/?prompt=1.%20Who%20is%20Sakshi%20Rautela%3F%0A2.%20Associate%20Software%20Engineer%20Intern%20at%20AppFoster%20and%20AI%2FML%20Engineer%20at%20https%3A%2F%2Fgithub.com%2Fsakshirautela"
-  },
-  {
-    name: "talk to claude about me →",
-    url: "https://claude.ai/new?q=1.%20Who%20is%20Sakshi%20Rautela%3F%0A2.%20Associate%20Software%20Engineer%20Intern%20at%20AppFoster%20and%20AI%2FML%20Engineer%20at%20https%3A%2F%2Fgithub.com%2Fsakshirautela"
-  },
-  {
-    name: "talk to gemini about me →",
-    url: "https://gemini.google.com/app?text=Tell%20me%20about%20Sakshi%20Rautela%20(Associate%20Software%20Engineer%20Intern%20at%20AppFoster%20and%20AI%2FML%20Engineer%20with%201000%2B%20LeetCode%20problems%20solved%20and%20GitHub%20https%3A%2F%2Fgithub.com%2Fsakshirautela)"
-  }
-];
-
 export const tableOfContents = [
   { id: "history", number: "01", label: "History" },
   { id: "experience", number: "02", label: "Experience" },
