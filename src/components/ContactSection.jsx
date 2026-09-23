@@ -14,74 +14,32 @@ export default function ContactSection() {
     setTimeout(() => setCopied(false), 3000);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) return;
-
-    setStatus("sending");
-    setStatusMessage("Sending your message...");
 
     const senderName = formData.name.trim();
     const senderEmail = formData.email.trim();
     const senderMessage = formData.message.trim();
+    const recipientEmail = personalInfo.email || "techsakshirautela@gmail.com";
 
-    try {
-      const recipientEmail = personalInfo.email || "sakshi.rautela780@gmail.com";
-      const response = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name: senderName,
-          email: senderEmail,
-          message: senderMessage,
-          _subject: `New Portfolio Message from ${senderName}`,
-          _captcha: "false",
-          _template: "table",
-        }),
-      });
+    const subject = encodeURIComponent(`Portfolio Message from ${senderName}`);
+    const body = encodeURIComponent(
+      `Hi Sakshi,\n\nYou have received a new message from your portfolio:\n\nName: ${senderName}\nEmail: ${senderEmail}\n\nMessage:\n${senderMessage}\n\n---\nSent from Portfolio Website`
+    );
 
-      const result = await response.json();
+    // Open standard mail client
+    window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
 
-      if (response.ok && (result.success === "true" || result.success === true || result.message)) {
-        setStatus("success");
-        setStatusMessage(
-          result.message && result.message.includes("Activation")
-            ? "Message submitted! (Check your inbox to click the one-time FormSubmit activation link)."
-            : "Thank you! Your message has been sent successfully. I'll get back to you soon! ✓"
-        );
-        // Reset entered input data on successful send
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        // Fallback to mailto
-        window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(
-          `Portfolio Message from ${senderName}`
-        )}&body=${encodeURIComponent(
-          `Name: ${senderName}\nEmail: ${senderEmail}\n\nMessage:\n${senderMessage}`
-        )}`;
-        setStatus("success");
-        setStatusMessage("Message prepared in your email client. Thank you!");
-        setFormData({ name: "", email: "", message: "" });
-      }
-    } catch (err) {
-      console.warn("Direct form submit error, opening mailto fallback:", err);
-      const recipientEmail = personalInfo.email || "sakshi.rautela780@gmail.com";
-      window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(
-        `Portfolio Message from ${senderName}`
-      )}&body=${encodeURIComponent(
-        `Name: ${senderName}\nEmail: ${senderEmail}\n\nMessage:\n${senderMessage}`
-      )}`;
-      setStatus("success");
-      setStatusMessage("Opening email client to send your message...");
-      setFormData({ name: "", email: "", message: "" });
-    }
+    // Reset entered form data immediately
+    setFormData({ name: "", email: "", message: "" });
+    setStatus("success");
+    setStatusMessage("Opening your email client to send message... Thank you! ✓");
 
     setTimeout(() => {
       setStatus("idle");
       setStatusMessage("");
-    }, 8000);
+    }, 6000);
   };
 
   const scrollToTop = () => {
@@ -162,7 +120,7 @@ export default function ContactSection() {
               <input
                 type="text"
                 id="name"
-                placeholder="Ada Lovelace"
+                placeholder="your name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
@@ -205,17 +163,16 @@ export default function ContactSection() {
                 {status === "sending"
                   ? "Sending Message..."
                   : status === "success"
-                  ? "Sent Successfully! ✓"
-                  : "Send Message"}
+                    ? "Sent Successfully! ✓"
+                    : "Send Message"}
               </span>
               <span className="arrow">→</span>
             </button>
 
             {statusMessage && (
               <div
-                className={`form-feedback-notice ${
-                  status === "success" ? "success" : status === "error" ? "error" : "info"
-                }`}
+                className={`form-feedback-notice ${status === "success" ? "success" : status === "error" ? "error" : "info"
+                  }`}
               >
                 {statusMessage}
               </div>
