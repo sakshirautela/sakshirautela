@@ -21,7 +21,7 @@ export default function ContactSection() {
     const senderName = formData.name.trim();
     const senderEmail = formData.email.trim();
     const senderMessage = formData.message.trim();
-    const recipientEmail = personalInfo.email || "techsakshirautela@gmail.com";
+    const recipientEmail = personalInfo.email || "sakshi.mlengineer@gmail.com";
 
     const subject = encodeURIComponent(`Portfolio Message from ${senderName}`);
     const body = encodeURIComponent(

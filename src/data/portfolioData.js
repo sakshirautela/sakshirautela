@@ -7,7 +7,7 @@ export const personalInfo = {
   statusText: "Open to work · SDE & AI/ML Engineer · Greater Noida / Remote · 2026",
   location: "Greater Noida, UP, India",
   timezone: "IST (UTC+5:30)",
-  email: process.env.REACT_APP_EMAIL || "sakshi.rautela780@gmail.com",
+  email: process.env.REACT_APP_EMAIL || "sakshi.mlengineer@gmail.com",
   secondaryEmail: "sakshi.rautela@s.amity.edu",
   phone: "+91 7456965264",
   github: "https://github.com/sakshirautela",
