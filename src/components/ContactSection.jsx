@@ -150,7 +150,7 @@ export default function ContactSection() {
               <input
                 type="text"
                 id="name"
-                placeholder="Ada Lovelace"
+                placeholder="your name "
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
@@ -163,7 +163,7 @@ export default function ContactSection() {
               <input
                 type="email"
                 id="email"
-                placeholder="ada@example.com"
+                placeholder="your email @example.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
@@ -193,17 +193,16 @@ export default function ContactSection() {
                 {status === "sending"
                   ? "Sending Message..."
                   : status === "success"
-                  ? "Sent Successfully! ✓"
-                  : "Send Message"}
+                    ? "Sent Successfully! ✓"
+                    : "Send Message"}
               </span>
               <span className="arrow">→</span>
             </button>
 
             {statusMessage && (
               <div
-                className={`form-feedback-notice ${
-                  status === "success" ? "success" : status === "error" ? "error" : "info"
-                }`}
+                className={`form-feedback-notice ${status === "success" ? "success" : status === "error" ? "error" : "info"
+                  }`}
               >
                 {statusMessage}
               </div>
