@@ -163,7 +163,7 @@ export default function ContactSection() {
               <input
                 type="email"
                 id="email"
-                placeholder="your email @example.com"
+                placeholder="your-email@example.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
