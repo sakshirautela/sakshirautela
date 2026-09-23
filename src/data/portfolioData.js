@@ -27,6 +27,8 @@ export const fastStats = [
   { label: "GitHub Repositories", value: "22+", icon: "github" },
   { label: "BCA CGPA (Distinction)", value: "9.02", icon: "award" },
   { label: "MCA Specialization", value: "AI / ML", icon: "cpu" }
+];
+
 export const tableOfContents = [
   { id: "history", number: "01", label: "History" },
   { id: "experience", number: "02", label: "Experience" },
