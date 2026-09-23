@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sakshirautela/static/css/main.fd5c6689.css",
-    "main.js": "/sakshirautela/static/js/main.d719ec6b.js",
+    "main.js": "/sakshirautela/static/js/main.ef3ddd5a.js",
     "index.html": "/sakshirautela/index.html",
     "main.fd5c6689.css.map": "/sakshirautela/static/css/main.fd5c6689.css.map",
-    "main.d719ec6b.js.map": "/sakshirautela/static/js/main.d719ec6b.js.map"
+    "main.ef3ddd5a.js.map": "/sakshirautela/static/js/main.ef3ddd5a.js.map"
   },
   "entrypoints": [
     "static/css/main.fd5c6689.css",
-    "static/js/main.d719ec6b.js"
+    "static/js/main.ef3ddd5a.js"
   ]
 }
