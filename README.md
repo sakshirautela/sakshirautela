@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,11,20&height=180&section=header&text=Sakshi%20Rautela&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Cooking%20up%20intelligent%20systems%20%26%20full-stack%20recipes%20%F0%9F%8D%9C&descFontSize=16&descFontAlignY=62" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,11,20&height=180&section=header&text=Sakshi%20Rautela&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Cooking%20up%20intelligent%20systems%20%26%20full-stack%20recipes%20%F0%9F%8D%9C&descFontSize=16&descFontAlignY=62" width="100%" alt="Header" />
 
   <p align="center">
     <strong>Full-Stack Developer</strong> &nbsp;•&nbsp; <strong>AI/ML Enthusiast</strong> &nbsp;•&nbsp; <strong>Problem Solver</strong>
@@ -22,7 +22,13 @@
 
 ---
 
-### 🍱 Today's Menu (Tech Stack)
+### 🍱 Today's Menu (Tech Stack & Toolkit)
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,python,cpp,js,react,spring,html,css,php,tensorflow,sklearn,opencv,git,github,vscode" alt="Tech Stack Icons" />
+</div>
+
+<br/>
 
 <table>
   <tr>
@@ -84,14 +90,16 @@
 
 ---
 
-### 📊 Kitchen Analytics
+### 📊 Kitchen Analytics & Activity
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sakshirautela&show_icons=true&theme=tokyonight&hide_border=true&title_color=ff7043&icon_color=ff7043&text_color=9fa8da" height="150" alt="Sakshi's GitHub Stats" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=sakshirautela&show_icons=true&theme=tokyonight&hide_border=true&title_color=ff7043&icon_color=ff7043&text_color=9fa8da" height="150" alt="Sakshi's GitHub Stats" />
   &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshirautela&layout=compact&theme=tokyonight&hide_border=true&title_color=ff7043&text_color=9fa8da" height="150" alt="Top Languages" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=sakshirautela&layout=compact&theme=tokyonight&hide_border=true&title_color=ff7043&text_color=9fa8da" height="150" alt="Top Languages" />
+  <br/><br/>
+  <img src="https://streak-stats.demolab.com/?user=sakshirautela&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,11,6,1&height=100&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,11,6,1&height=100&section=footer" width="100%" alt="Footer" />
 </p>
