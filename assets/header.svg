@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="35%" stop-color="#E91E63"/>
+      <stop offset="70%" stop-color="#9C27B0"/>
+      <stop offset="100%" stop-color="#3F51B5"/>
+    </linearGradient>
+    <linearGradient id="wave-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="wave-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      fill: #FFFFFF;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      fill: #FFE0B2;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      font-style: italic;
+      fill: #FFFFFF;
+      opacity: 0.92;
+    }
+  </style>
+
+  <!-- Background Base with Rounded Corners -->
+  <rect width="900" height="220" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Decorative Waves -->
+  <path d="M0,130 C180,180 320,90 520,140 C700,185 800,120 900,150 L900,220 L0,220 Z" fill="url(#wave-grad-1)"/>
+  <path d="M0,165 C220,120 380,200 580,155 C740,115 820,180 900,160 L900,220 L0,220 Z" fill="url(#wave-grad-2)"/>
+
+  <!-- Center Content -->
+  <g filter="url(#shadow)">
+    <!-- Main Title -->
+    <text x="450" y="82" text-anchor="middle" class="title">Sakshi Rautela</text>
+    
+    <!-- Subtitle Roles -->
+    <text x="450" y="125" text-anchor="middle" class="subtitle">Full-Stack Developer • AI/ML Enthusiast • Problem Solver</text>
+    
+    <!-- Tagline -->
+    <text x="450" y="162" text-anchor="middle" class="tagline">"Cooking up intelligent systems &amp; full-stack recipes" 🍜 ✨</text>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,11,20&height=180&section=header&text=Sakshi%20Rautela&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Cooking%20up%20intelligent%20systems%20%26%20full-stack%20recipes%20%F0%9F%8D%9C&descFontSize=16&descFontAlignY=62" width="100%" alt="Header" />
+  <img src="https://raw.githubusercontent.com/sakshirautela/sakshirautela/main/assets/header.svg" width="100%" alt="Header" />
 
   <p align="center">
     <strong>Full-Stack Developer</strong> &nbsp;•&nbsp; <strong>AI/ML Enthusiast</strong> &nbsp;•&nbsp; <strong>Problem Solver</strong>
@@ -101,5 +101,5 @@
 </div>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,11,6,1&height=100&section=footer" width="100%" alt="Footer" />
+  <img src="https://raw.githubusercontent.com/sakshirautela/sakshirautela/main/assets/footer.svg" width="100%" alt="Footer" />
 </p>
