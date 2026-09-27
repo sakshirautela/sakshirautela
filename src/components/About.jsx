@@ -9,18 +9,16 @@ export default function About() {
             <p className="section-label">About Me</p>
 
             <h2 className="section-title" style={{ marginBottom: 28 }}>
-              AI/ML Engineer,
+              Software Engineer,
               <br />
-              <em>building intelligent systems.</em>
+              <em>building scalable systems.</em>
             </h2>
 
             <p className="about-text">
               I'm a final-year MCA student at <strong>Amity University, Noida</strong>,
-              passionate about building <strong>AI-powered, production-ready software</strong>.
-              My expertise spans <strong>Machine Learning, Deep Learning, Generative AI,
-                Large Language Models (LLMs), LangChain</strong>, and modern Full-Stack
-              Development using <strong>React.js, Java Spring Boot, REST APIs,
-                PostgreSQL, Docker</strong>.
+              passionate about building <strong>scalable, production-ready software</strong>.
+              My expertise spans <strong>Full-Stack & Backend Systems,
+              Java Spring Boot, REST APIs, PostgreSQL, React.js, Docker</strong>, and high-performance algorithms.
             </p>
 
             <p className="about-text">
@@ -136,14 +134,14 @@ export default function About() {
                 <div className="info-row">
                   <span className="info-key">Role</span>
                   <span className="info-val">
-                    AI/ML Engineer • Software Engineer
+                    Software Engineer
                   </span>
                 </div>
 
                 <div className="info-row">
                   <span className="info-key">Specialization</span>
                   <span className="info-val">
-                    ML • Deep Learning • GenAI
+                    Backend • Full-Stack • Cloud
                   </span>
                 </div>
 
@@ -155,7 +153,7 @@ export default function About() {
                 <div className="info-row">
                   <span className="info-key">Open to</span>
                   <span className="info-val">
-                    AI/ML • Backend • Full-Stack Roles
+                    Software Engineer • Backend • Full-Stack Roles
                   </span>
                 </div>
 

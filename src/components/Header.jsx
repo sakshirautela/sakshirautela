@@ -4,6 +4,7 @@ import "../styles/Header.css";
 export default function Header({ activeSection }) {
   const [theme, setTheme] = useState("dark");
   const [scrolled, setScrolled] = useState(false);
+  const isBlog = activeSection === "blog" || (typeof window !== "undefined" && window.location.hash.startsWith("#blog"));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,14 +20,22 @@ export default function Header({ activeSection }) {
     document.documentElement.setAttribute("data-theme", nextTheme);
   };
 
-  const navItems = [
-    { id: "history", label: "01 History" },
-    { id: "experience", label: "02 Experience" },
-    { id: "projects", label: "03 Projects" },
-    { id: "leetcode", label: "04 LeetCode" },
-    { id: "stack", label: "05 Stack" },
-    { id: "contact", label: "07 Contact" },
+  const portfolioNavItems = [
+    { id: "history", label: "01 History", href: "#history" },
+    { id: "experience", label: "02 Experience", href: "#experience" },
+    { id: "projects", label: "03 Projects", href: "#projects" },
+    { id: "leetcode", label: "04 LeetCode", href: "#leetcode" },
+    { id: "stack", label: "05 Stack", href: "#stack" },
+    { id: "blog", label: "06 Blog", href: "#blog", isHighlighted: true },
+    { id: "contact", label: "07 Contact", href: "#contact" },
   ];
+
+  const blogNavItems = [
+    { id: "portfolio", label: "← Portfolio", href: "#hero" },
+    { id: "blog", label: "All Topics", href: "#blog", isHighlighted: true },
+  ];
+
+  const currentNavItems = isBlog ? blogNavItems : portfolioNavItems;
 
   return (
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
@@ -34,17 +43,19 @@ export default function Header({ activeSection }) {
         <a href="#hero" className="header-brand">
           <span className="brand-dot" />
           <span className="brand-name">Sakshi Rautela</span>
-          <span className="brand-tag">AI/ML & SDE</span>
+          <span className="brand-tag">{isBlog ? "Engineering Blog" : "Software Engineer"}</span>
         </a>
 
         <nav className="header-nav">
-          {navItems.map((item) => (
+          {currentNavItems.map((item) => (
             <a
               key={item.id}
-              href={`#${item.id}`}
-              className={`nav-link ${activeSection === item.id ? "active" : ""}`}
+              href={item.href}
+              className={`nav-link ${item.isHighlighted ? "nav-link-highlight" : ""} ${activeSection === item.id ? "active" : ""}`}
             >
-              {item.label}
+              {item.isHighlighted && <span className="highlight-dot" />}
+              <span>{item.label}</span>
+              {item.isHighlighted && <span className="highlight-sparkle">✦</span>}
             </a>
           ))}
         </nav>

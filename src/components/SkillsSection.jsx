@@ -13,7 +13,7 @@ export default function SkillsSection() {
           Technologies & <span className="title-serif">Tooling</span>
         </h2>
         <p className="section-description">
-          Core technical competencies across AI/ML engineering, scalable backend systems, modern web, and computer science foundations.
+          Core technical competencies across scalable backend systems, distributed architectures, modern web, and computer science foundations.
         </p>
       </div>
 

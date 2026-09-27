@@ -2,9 +2,9 @@
 
 export const personalInfo = {
   name: "Sakshi Rautela",
-  role: "Machine Learning Engineer · AI/ML — Generative AI · Full-Stack SDE",
-  tagline: "Building intelligent systems, LLM architectures & scalable backends.",
-  statusText: "Open to work · SDE & AI/ML Engineer · Greater Noida / Remote · 2026",
+  role: "Software Engineer · Full-Stack & Backend Systems",
+  tagline: "Building resilient systems, scalable backends & high-performance applications.",
+  statusText: "Open to work · Software Engineer · Greater Noida / Remote · 2026",
   location: "Greater Noida, UP, India",
   timezone: "IST (UTC+5:30)",
   email: process.env.REACT_APP_EMAIL || "sakshi.mlengineer@gmail.com",
@@ -41,7 +41,7 @@ export const tableOfContents = [
 
 export const historyNarrative = {
   paragraphs: [
-    "I am an Associate Software Engineering Intern at AppFoster and Machine Learning Engineer specializing in AI/ML systems, Generative AI, and full-stack software development.",
+    "I am an Associate Software Engineering Intern at AppFoster and Software Engineer specializing in scalable backend architectures and full-stack software development.",
     "My engineering work spans deep learning model architectures (GPT-2 transformer from scratch in PyTorch, clinical diagnostic DocAI, and multimodal RAG pipelines), real-time CMS/eCommerce monitoring at AppFoster, and full-stack Spring Boot & React services at HackerRank.",
     "Having solved over 1,000+ problems across LeetCode and HackerRank, I combine deep algorithmic foundations with clean system architecture and production reliability."
   ],

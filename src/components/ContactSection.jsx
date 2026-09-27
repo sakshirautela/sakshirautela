@@ -98,7 +98,7 @@ export default function ContactSection() {
           Get in Touch & <span className="title-serif">Collaborate</span>
         </h2>
         <p className="section-description">
-          Open for SDE and AI/ML engineering roles, open source collaboration, and research discussions.
+          Open for Software Engineer roles, backend development, and technical collaboration.
         </p>
       </div>
 
@@ -108,7 +108,7 @@ export default function ContactSection() {
           <div className="outreach-header">
             <h3>Let's talk code & systems</h3>
             <p>
-              Whether you are looking to hire a software engineer with strong DSA foundations or build intelligent ML pipelines, feel free to reach out.
+              Whether you are looking to hire a Software Engineer with strong DSA foundations and scalable system design skills, feel free to reach out.
             </p>
           </div>
 
