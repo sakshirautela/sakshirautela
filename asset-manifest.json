@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/sakshirautela/static/css/main.fd5c6689.css",
-    "main.js": "/sakshirautela/static/js/main.ef3ddd5a.js",
+    "main.css": "/sakshirautela/static/css/main.876767e7.css",
+    "main.js": "/sakshirautela/static/js/main.98f7f090.js",
+    "static/media/transformer-architectures.md": "/sakshirautela/static/media/transformer-architectures.9962fdb4d5162dc1d3f0.md",
+    "static/media/async.md": "/sakshirautela/static/media/async.e858d12f52f2ddd8eef1.md",
+    "static/media/closures.md": "/sakshirautela/static/media/closures.342dd01996ed9b71e3c7.md",
+    "static/media/distributed-caching.md": "/sakshirautela/static/media/distributed-caching.066bf6c2a66b261b1d04.md",
+    "static/media/custom-hooks.md": "/sakshirautela/static/media/custom-hooks.be72520fd398641ed73c.md",
     "index.html": "/sakshirautela/index.html",
-    "main.fd5c6689.css.map": "/sakshirautela/static/css/main.fd5c6689.css.map",
-    "main.ef3ddd5a.js.map": "/sakshirautela/static/js/main.ef3ddd5a.js.map"
+    "main.876767e7.css.map": "/sakshirautela/static/css/main.876767e7.css.map",
+    "main.98f7f090.js.map": "/sakshirautela/static/js/main.98f7f090.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd5c6689.css",
-    "static/js/main.ef3ddd5a.js"
+    "static/css/main.876767e7.css",
+    "static/js/main.98f7f090.js"
   ]
 }
